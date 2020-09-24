@@ -1,5 +1,7 @@
 # Escuela de Desarrollo Web by Platzi - Fylo data storage component
 
+## Diseño alternativo alineando el marcador de capacidad restante con la barra de capacidad de almacenamiento
+
 ![Design preview for the Fylo data storage component coding challenge](./desktop-preview.png)
 
 ## Bienvenida/o 👋
@@ -50,3 +52,5 @@ No dudes en utilizar cualquier flujo de trabajo con el que te sienta más cómod
 ## Créditos por el diseño y reto.
 
 Este reto pertenece a la lista de retos de [Frontend Mentor](https://www.frontendmentor.io/dashboard)
+
+
