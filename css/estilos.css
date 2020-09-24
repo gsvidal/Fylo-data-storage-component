@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  color: hsl(243, 100%, 93%);
+  font-family: 'Raleway', sans-serif;
+  height: 667px;
+}
+
+body {
+
+  /* background: url('../images/bg-mobile.png'); */
+  /* background-attachment: fixed; */
+  height: 567px;
+  position: relative;
+}
+.image-back_mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+.image-back_mobile img {
+  width: 100%;
+  height: 100vh;
+}
+.image-back_mobile .attribution {
+  /* color:red; */
+  position: relative;
+  top:-20px;
+  text-align: center;
+}
+.image-back_desktop img{
+  display: none;
+}
+.image-back_desktop .attribution {
+  display: none;
+}
+figure {
+  width: 85%;
+  height: 182px;
+  border-radius: 10px;
+  border-top-right-radius: 75px;
+  padding: 40px;
+  margin: 0 auto;
+  margin-top: 130px;
+  background-color: hsl(228, 56%, 26%);
+
+}
+figure .iconos{
+  padding-top: 20px;
+  display:flex;
+}
+
+figure .image-container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(229, 57%, 11%);
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+  border-radius: 7px;
+  margin: 5px;
+}
+figure .image-container:nth-of-type(1) {
+  margin-left: 0px;
+}
+
+.capacidad_container {
+  width: 85%;
+  border-radius: 10px;
+  padding: 35px;
+  margin: 0 auto;
+  margin-top: 15px;
+  background-color: hsl(228, 56%, 26%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position:relative;
+}
+.capacidad_status {
+  font-size: 1.4rem;
+}
+.capacidad_barra {
+  width:100%;
+  height: 18px;
+  background-color: hsl(229, 57%, 11%); 
+  margin: 15px 0;
+  border: 3px solid hsl(229, 57%, 11%);
+  border-radius: 7.5px;
+}
+.capacidad_barra_full {
+  width:81.5%;
+  height: 12px;
+  background-image: linear-gradient(to right,hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  border-radius: 7.5px;
+  display: flex;align-items: center;
+  justify-content: flex-end;
+}
+.capacidad_barra_punto {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 2px;
+  background-color: hsl(243, 100%, 93%);
+}
+
+.capacidad_limites {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.capacidad_restante {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-transform: uppercase;
+  color: hsl(229, 7%, 55%);
+  background-color: white;
+  width: 155px;
+  height: 60px;
+  border-radius: 8px;
+  position:absolute;
+  top: 165px;
+
+}
+.capacidad_restante_numero {
+  font-size: 3.5rem;
+  color: hsl(229, 57%, 11%);
+  font-weight: 700;
+}
+
+
+.attribution a {
+  color: hsl(229, 7%, 55%);
+  text-decoration: none;
+}
+
+@media screen and (min-width: 375px) {
+  
+}
+
+@media screen and (min-width: 800px) {
+
+  figure, .capacidad_container {
+    width: 680px;
+  }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+ 
+  body {
+    background-color: hsl(229, 57%, 11%);
+    /* max-height: 1080px; */
+  }
+
+  .image-back_mobile img {
+    display:none;
+  }
+
+  .image-back_desktop {
+    position: fixed;
+    top: 50vh;
+    left: 0;
+    right: 0;
+    bottom: 100vh;
+    z-index: -1;
+  }
+
+  .image-back_desktop img {
+    display: block;
+    width: 100%;
+    height: 50vh;
+    max-height: 50vh;
+  }
+
+  .image-back_desktop .attribution {
+    display: block;
+    position: relative;
+    top:-20px;
+    text-align: center;
+    z-index: 5
+  }
+  .container_figure_capacidad {
+    display: flex;
+    justify-content: center  ;
+    margin: 40vh 25vw;
+  }
+  figure {
+    width: 319px;
+    margin: 0;
+    margin-right: 20px;
+  }
+  .capacidad_container {
+    width: 600px;
+    margin: 0;
+    padding-top: 40px;
+    align-items: flex-start;
+  }
+  .capacidad_restante {
+    
+    text-transform: uppercase;
+    color: hsl(229, 7%, 55%);
+    background-color: white;
+    position:absolute;
+    top: -40px;
+    right: 113px;
+  
+  }
+  .capacidad_restante_triangle {
+    /* Se le pone position absolute para que no deje un espacio vacío donde aparecía inicialmente */
+    position: absolute;
+    top:45px;
+    left: 125px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-left: 15px solid transparent;
+    border-right: 15px solid white;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+  }
+  
+}
