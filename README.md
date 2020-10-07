@@ -1,4 +1,4 @@
-# Escuela de Desarrollo Web by Platzi - Fylo data storage component
+# https://gsvidal.github.io/Fylo-data-storage-component/
 
 ## Diseño alternativo alineando el marcador de capacidad restante con la barra de capacidad de almacenamiento
 
